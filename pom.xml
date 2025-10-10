@@ -9,7 +9,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Commons Mobyapp</name>
+    <name>Commons-Mobyapp</name>
     <description>Libreria central de clases comunes para la MobyApp</description>
 
     <licenses>
