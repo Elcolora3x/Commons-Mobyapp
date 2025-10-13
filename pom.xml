@@ -11,6 +11,7 @@
 
     <name>Commons-Mobyapp</name>
     <description>Libreria central de clases comunes para la MobyApp</description>
+    <url>https://github.com/Elcolora3x/Commons-Mobyapp</url>
 
     <licenses>
         <license>
@@ -25,6 +26,12 @@
             <email>elcolora2x@gmail.com</email>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/Elcolora3x/Commons-Mobyapp.git</connection>
+        <developerConnection>scm:git:ssh://github.com/Elcolora3x/Commons-Mobyapp.git</developerConnection>
+        <url>https://github.com/Elcolora3x/Commons-Mobyapp</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -51,4 +58,19 @@
             <version>2.20</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.9.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
