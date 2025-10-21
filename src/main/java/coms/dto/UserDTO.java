@@ -17,20 +17,17 @@ public class UserDTO {
 
     private String email;
     private String profilePicture;
-    private Boolean asset;
-
-    private LocalDate dateOfBirth;
 
     private String province;
     private String locality;
 
-    private TechnologyDTO currentTech;
-    private UserDTO referent;
-    private UserDTO talentPartner;
+    private String currentTech;
+    private UserDTO referent; //nullable
+    private UserDTO talentPartner; //nullable
 
     private LocalDate dateEntered;
     private String signatureUrl;
 
     // Projects related
-    private List<ProjectDTO> projects;
+    private List<String> projects;
 }

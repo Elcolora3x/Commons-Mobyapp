@@ -14,6 +14,8 @@ import java.util.List;
 @Setter
 @Getter
 
+//TODO: Crear simil para la clase ProjectDTO (AirtableProjectRecord)
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AirtableUserRecord {
     @JsonProperty("Nombre")
