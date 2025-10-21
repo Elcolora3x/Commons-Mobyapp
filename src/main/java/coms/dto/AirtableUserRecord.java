@@ -3,11 +3,7 @@ package coms.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
-
-
 import java.util.List;
-
-//@Component
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,6 +14,7 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AirtableUserRecord {
+
     @JsonProperty("Nombre")
     private String name;
 
@@ -54,6 +51,6 @@ public class AirtableUserRecord {
     @JsonProperty("Referente")
     private String referent;
 
-    @JsonProperty("Tecnología Actual")
+    @JsonProperty("Tecnologia Actual")
     private String currentTech;
 }

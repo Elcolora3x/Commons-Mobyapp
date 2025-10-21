@@ -11,9 +11,8 @@ import java.util.List;
 @Getter
 public class ProjectDTO {
     private String name;
-    private String description;
     private String client;
     private LocalDate creationDate;
     private LocalDate closingDate;
-    private String state;
+    private List<String> usersMoby;
 }
