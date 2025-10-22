@@ -4,12 +4,15 @@ package coms.dto;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserDTO {
 
     private String name;
@@ -22,9 +25,10 @@ public class UserDTO {
     private String locality;
 
     private String currentTech;
-    private UserDTO referent; //nullable
-    private UserDTO talentPartner; //nullable
+    private UserReferenceDTO referent; //nullable
+    private UserReferenceDTO talentPartner; //nullable
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dateEntered;
     private String signatureUrl;
 
