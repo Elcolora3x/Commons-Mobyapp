@@ -15,6 +15,8 @@ import lombok.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserDTO {
 
+    private String airtable_id;
+
     private String name;
     private String lastName;
 

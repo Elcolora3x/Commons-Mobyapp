@@ -25,11 +25,27 @@ public class AirtableUserRecord {
     @JsonProperty("Correo Moby")
     private String correoMoby;
 
-    @JsonProperty("Fecha de Alta")
-    private String entryDate;
+    @JsonProperty("Provincia")
+    private String province;
 
-    @JsonProperty("Foto de Perfil URL")
-    private String profilePicture;
+    @JsonProperty("Localidad")
+    private String locality;
+
+    @JsonProperty("Tecnologia Actual")
+    private String currentTech;
+
+    // Es un solo referente, pero airtable lo muestra como una lista con un solo elemento (una garcha)
+    @JsonProperty("Referente")
+    private List<String> referent;
+
+    @JsonProperty("Talent Partner")
+    private List<String> talentPartner;
+
+    @JsonProperty("Proyectos")
+    private List<String> projects;
+
+    @JsonProperty("Firma URL")
+    private String signatureURL;
 
     @JsonProperty("Es Referente?")
     private Boolean isReferent;
@@ -37,21 +53,22 @@ public class AirtableUserRecord {
     @JsonProperty("Es Talent Partner?")
     private Boolean isTalentPartner;
 
-    @JsonProperty("Firma URL")
-    private String signatureURL;
+    @JsonProperty("Fecha de Alta")
+    private String entryDate;
 
-    @JsonProperty("Localidad")
-    private String locality;
+    @JsonProperty("Foto de Perfil URL")
+    private String profilePicture;
 
-    @JsonProperty("Provincia")
-    private String province;
+    @JsonProperty("Direccion")
+    private String address;
 
-    @JsonProperty("Proyectos")
-    private List<String> projects;
+    @JsonProperty("Observaciones")
+    private String observation;
 
-    @JsonProperty("Referente")
-    private String referent;
+    @JsonProperty("Tecnologia")
+    private List<String> technology;
 
-    @JsonProperty("Tecnologia Actual")
-    private String currentTech;
+    @JsonProperty("Historial de Tecnologias")
+    private List<String> techHistory;
+
 }

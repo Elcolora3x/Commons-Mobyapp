@@ -11,7 +11,7 @@
     </parent>
     <groupId>io.github.elcolora3x</groupId>
     <artifactId>libreriaclasescomunes</artifactId>
-    <version>1.3</version>
+    <version>1.5-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Commons-Mobyapp</name>
@@ -52,11 +52,22 @@
         </repository>
     </distributionManagement>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2025.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>5.0.0-M4</version>
         </dependency>
         <!-- Spring -->
         <dependency>
