@@ -32,6 +32,9 @@ public class UserDTO {
     private LocalDate dateEntered;
     private String signatureUrl;
 
+    private String address;
+    private String observation;
+
     // Projects related
     private List<String> projects;
 }
