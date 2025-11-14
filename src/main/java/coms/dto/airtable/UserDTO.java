@@ -1,4 +1,4 @@
-package coms.dto;
+package coms.dto.airtable;
 
 
 import java.time.LocalDate;
@@ -15,28 +15,20 @@ import lombok.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserDTO {
 
-    private String airtable_id;
-
     private String name;
     private String lastName;
-
     private String email;
     private String profilePicture;
-
     private String province;
     private String locality;
-
-    private String currentTech;
-    private UserReferenceDTO referent; //nullable
-    private UserReferenceDTO talentPartner; //nullable
-
+    private UserReferenceDTO referent;
+    private UserReferenceDTO talentPartner;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dateEntered;
     private String signatureUrl;
-
     private String address;
     private String observation;
+    private List<String> projects; //Desde Airtable mando name nada mas
+    private List<String> currentTech; //Desde Airtable mando name nada mas
 
-    // Projects related
-    private List<String> projects;
 }

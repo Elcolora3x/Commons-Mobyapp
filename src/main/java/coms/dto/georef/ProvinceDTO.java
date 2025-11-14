@@ -1,4 +1,4 @@
-package coms.dto;
+package coms.dto.georef;
 
 import lombok.*;
 
@@ -6,7 +6,6 @@ import lombok.*;
 @AllArgsConstructor
 @Setter
 @Getter
-
-public class LocalityDTO {
+public class ProvinceDTO {
     private String name;
 }

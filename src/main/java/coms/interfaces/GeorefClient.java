@@ -1,7 +1,7 @@
 package coms.interfaces;
 
-import coms.dto.LocalityDTO;
-import coms.dto.ProvinceDTO;
+import coms.dto.georef.LocalityDTO;
+import coms.dto.georef.ProvinceDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

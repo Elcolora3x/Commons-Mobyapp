@@ -1,4 +1,4 @@
-package coms.dto;
+package coms.dto.airtable;
 
 import lombok.*;
 
